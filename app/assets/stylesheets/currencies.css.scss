@@ -1,0 +1,31 @@
+// Place all the styles related to the Currencies controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+html 
+{
+  font-size: 20px;
+}
+
+.panel {
+  background: #333333;
+  border: solid white;
+}
+
+.results {
+  font-size: 1em;
+  color: #FFFFFF;
+}
+
+.dropdown {
+  margin-bottom: 50px;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.center {
+  width: 90%;
+  margin: 0 auto 30px;
+}

@@ -1,0 +1,65 @@
+%head
+  %title Josh Currency Converter
+  %link{:href => "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css", :rel => "stylesheet"}/
+  / Custom CSS
+  %script{:src => "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"}
+%body
+  / Navigation Bar
+  %nav.menu.navbar-default.navbar-menu
+    .container
+      .menu-header
+        %button.navbar-toggle{"data-target" => "#myNavbar", "data-toggle" => "collapse", :type => "button"}
+          %span.icon-bar
+          %span.icon-bar
+          %span.icon-bar
+        %a.navbar-brand Josh Currency Converter
+  %br/
+  %br/
+  %br/
+  .container
+    .row
+      .col-md-8.col-md-offset-2
+        .panel.panel-primary.text-center
+          .panel-heading
+            %h4.panel-title Currency Converter
+          .error
+            Please enter numeric value
+          .panel-body
+            %form.form-vertical
+              .form-group.center
+                %label{:for => ""} Enter Value:
+                %input.amount.form-control{:min => "1", :placeholder => "Enter value", :type => "number"}/
+              .form-group.inline-block
+                %label{:for => ""} From currency:
+                %select.currency-list.form-control{:onclick => "exchangeCurrency()"}
+                  %option --Select--
+              .form-group.inline-block
+                %label To currency:
+                %select.currency-list.form-control{:onclick => "exchangeCurrency()"}
+                  %option --Select--
+            %p.results 0
+  %script{:src => "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"}
+  %script{:src => "https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"}
+  / Money pics
+  .container
+    .row
+      .col-md-4
+        .thumbnail
+          %a{:href => "http://a57.foxnews.com/images.foxnews.com/content/fox-news/tech/2016/11/30/u-k-s-first-ever-plastic-5-bill-has-really-upset-vegans/_jcr_content/par/featured_image/media-0.img.jpg/876/493/1480522867287.jpg", :target => "_blank"}
+            %img{:alt => "Pic1", :src => "http://a57.foxnews.com/images.foxnews.com/content/fox-news/tech/2016/11/30/u-k-s-first-ever-plastic-5-bill-has-really-upset-vegans/_jcr_content/par/featured_image/media-0.img.jpg/876/493/1480522867287.jpg", :style => "width:100%"}/
+      .col-md-4
+        .thumbnail
+          %a{:href => "https://w-dog.net/wallpapers/12/1/458166855232810/money-euro-euro-currency-notes-close-up.jpg", :target => "_blank"}
+            %img{:alt => "Pic2", :src => "https://w-dog.net/wallpapers/12/1/458166855232810/money-euro-euro-currency-notes-close-up.jpg", :style => "width:100%"}/
+      .col-md-4
+        .thumbnail
+          %a{:href => "https://cdn.shutterstock.com/shutterstock/videos/7477096/thumb/9.jpg", :target => "_blank"}
+            %img{:alt => "Pic3", :src => "https://cdn.shutterstock.com/shutterstock/videos/7477096/thumb/9.jpg", :style => "width:100%"}/
+  / End of money pics
+  / Footer
+  %footer.footer
+    .container
+      %p.text-center
+        © Josh Software Private Limited -
+        %a{:href => "http://www.joshsoftware.com"} http://www.joshsoftware.com
+  / End of Footer
