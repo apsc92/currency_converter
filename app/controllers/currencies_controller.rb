@@ -1,0 +1,2 @@
+class CurrenciesController < ApplicationController
+end
