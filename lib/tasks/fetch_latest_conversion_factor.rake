@@ -13,7 +13,7 @@ namespace :currency do
         currency.save
       end
     rescue Exception => e
-      logger.info("Exception: #{error.message}")
+      Rails.logger.info("Exception: #{error.message}")
     end
   end
 end
